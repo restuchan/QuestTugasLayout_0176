@@ -1,5 +1,6 @@
 package com.chan.tugas4
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -60,6 +61,13 @@ fun LayoutUtama(modifier: Modifier){
             stringResource(R.string.alamat4),
             colorResource(R.color.card_4_bg)
         )
-
+        Box(modifier = Modifier.fillMaxSize()){
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
