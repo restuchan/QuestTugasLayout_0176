@@ -21,6 +21,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.layout.Row
+import androidx.compose.material3.Card
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun LayoutUtama(modifier: Modifier){
@@ -43,8 +46,9 @@ fun LayoutUtama(modifier: Modifier){
         TemplateCard(
             modifier = Modifier,
             stringResource(R.string.nama1),
-            stringResource(R.string.alamat1),
-            colorResource(R.color.card_1_bg)
+            noTelp = "Nomor telepon belum tersedia",
+            alamat = stringResource(R.string.alamat1),
+            bgCard = colorResource(R.color.card_1_bg)
         )
         TemplateCard(
             modifier = Modifier,
