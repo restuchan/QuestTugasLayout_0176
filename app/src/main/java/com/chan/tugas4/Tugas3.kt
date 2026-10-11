@@ -4,8 +4,10 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -70,4 +72,20 @@ fun LayoutUtama(modifier: Modifier){
             )
         }
     }
+}
+
+@Composable
+fun TemplateCard(
+    modifier: Modifier,
+    nama: String,
+    noTelp: String,
+    alamat: String,
+    bgCard: Color,
+){
+    Card(
+        modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(10.dp),
+        colors = CardDefaults.cardColors(containerColor = bgCard)
+    )
 }
