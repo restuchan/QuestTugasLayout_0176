@@ -46,7 +46,7 @@ fun LayoutUtama(modifier: Modifier){
         TemplateCard(
             modifier = Modifier,
             stringResource(R.string.nama1),
-            noTelp = "Nomor telepon belum tersedia",
+            noTelp = "Nomor telepon tidak ada",
             alamat = stringResource(R.string.alamat1),
             bgCard = colorResource(R.color.card_1_bg)
         )
