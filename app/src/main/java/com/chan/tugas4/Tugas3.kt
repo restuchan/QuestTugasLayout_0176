@@ -53,6 +53,13 @@ fun LayoutUtama(modifier: Modifier){
             stringResource(R.string.alamat3),
             colorResource(R.color.card_3_bg)
         )
+        TemplateCard(
+            modifier = Modifier,
+            stringResource(R.string.nama4),
+            stringResource(R.string.noTelp4),
+            stringResource(R.string.alamat4),
+            colorResource(R.color.card_4_bg)
+        )
 
     }
 }
